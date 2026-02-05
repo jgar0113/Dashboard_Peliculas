@@ -114,7 +114,7 @@ with st.sidebar.form("form_nueva_pelicula", clear_on_submit=True):
 
             st.cache_data.clear()
 
-            st.success("Filme agregado correctamente")
+            st.success("Película agregada correctamente")
 
 df_resultado = df_movies
 
@@ -147,4 +147,5 @@ if df_resultado.empty:
     st.warning("No se encontraron películas con ese criterio")
 else:
     st.dataframe(df_resultado, use_container_width=True)
+
 
