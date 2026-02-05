@@ -141,9 +141,10 @@ elif mostrar_todas:
     st.subheader("Listado completo de películas")
 
 
-st.write(f"Total de películas encontrados: {len(df_resultado)}")
+st.write(f"Total de películas encontradas: {len(df_resultado)}")
 
 if df_resultado.empty:
     st.warning("No se encontraron películas con ese criterio")
 else:
     st.dataframe(df_resultado, use_container_width=True)
+
