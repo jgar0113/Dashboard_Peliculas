@@ -92,7 +92,7 @@ with st.sidebar.form("form_nueva_pelicula", clear_on_submit=True):
     nuevo_genero = st.text_input("Género")
     nueva_compania = st.text_input("Compañía")
 
-    boton_guardar = st.form_submit_button("Guardar Pelicula")
+    boton_guardar = st.form_submit_button("Guardar Película")
 
     if boton_guardar:
         if (
@@ -141,7 +141,7 @@ elif mostrar_todas:
     st.subheader("Listado completo de películas")
 
 
-st.write(f"Total de filmes encontrados: {len(df_resultado)}")
+st.write(f"Total de películas encontrados: {len(df_resultado)}")
 
 if df_resultado.empty:
     st.warning("No se encontraron películas con ese criterio")
